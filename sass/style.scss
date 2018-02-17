@@ -8,10 +8,18 @@
 .wrapper{
   max-width: 1440px;
   margin: 0 auto;
+  box-sizing: border-box;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: relative;
+  font-family: "Oswald", SansSerif;
   .content{
     max-width: 1220px;
     padding: 0 40px;
     margin: 0 auto;
+  }
+  button{
+    outline: none;
   }
 }
 
@@ -38,17 +46,72 @@ header{
         line-height: 59px;
         text-transform: uppercase;
         text-decoration: none;
-        color: #000000;
-        font-family: Oswald, SansSerif;
+        color: #ffffff;
         font-weight: 400;
         box-sizing: border-box;
+        letter-spacing: 0.8px;
         &:hover{
-          border-bottom: 2px solid black;
+          border-bottom: 2px solid #ffffff;
         }
       }
     }
   }
 }
+
+.intro{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 696px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  &__text-block{
+    width: 50%;
+    padding-top: 225px;
+    position: relative;
+    &__text{
+      max-width: 415px;
+      margin: 0 auto;
+      h1{
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;
+        margin-bottom: 48px;
+      }
+      p{
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 54px;
+      }
+      button{
+        width: 245px;
+        height: 52px;
+        box-sizing: border-box;
+        background-color: #68b738;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "Oswald", SansSerif;
+        display: block;
+      }
+    }
+    &__can{
+      position: absolute;
+      right: -54%;
+      top: 143px;
+    }
+  }
+  &__wallpaper{
+    background: url("../assets/img/index-background-desktop.jpg") no-repeat right;
+    width: 50%;
+  }
+}
+
+
+
 
 
 
