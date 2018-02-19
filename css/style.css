@@ -8,10 +8,9 @@
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   position: relative;
   font-family: "Oswald", SansSerif;
+  box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.6);
 }
 
 .wrapper .content {
@@ -119,6 +118,56 @@ header nav .menu__item__link:hover {
 }
 
 .intro__wallpaper {
-  background: url("../assets/img/index-background-desktop.jpg") no-repeat right;
+  background: -webkit-image-set(url("../assets/img/index-background-desktop@1x.jpg") 1x, url("../assets/img/index-background-desktop@2x.jpg") 2x) no-repeat right;
   width: 50%;
+}
+
+.course-description {
+  margin-top: 635px;
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-description__item {
+  max-width: 570px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 48px 52px;
+}
+
+.course-description__item__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.course-description__item__header__logo-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: #68b738;
+  border-radius: 50%;
+  position: relative;
+}
+
+.course-description__item__header__logo-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.course-description__item__header h2 {
+  text-transform: uppercase;
+  margin-left: 64px;
+  font-size: 35px;
+  font-family: "Oswald", SansSerif;
+  font-weight: 400;
+}
+
+.course-description__item p {
+  font-size: 16px;
+  font-family: "Arial";
+  color: #686868;
+  line-height: 23px;
 }

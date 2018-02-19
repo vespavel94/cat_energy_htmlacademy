@@ -1,45 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700&subset=cyrillic');
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
   position: relative;
   font-family: "Oswald", SansSerif;
-  .content{
+  box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.6);
+  .content {
     max-width: 1220px;
     padding: 0 40px;
     margin: 0 auto;
   }
-  button{
+  button {
     outline: none;
   }
 }
 
-header{
+header {
   height: 59px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-top: 54px;
-  .logo{
+  .logo {
     width: 204px;
   }
-  nav{
+  nav {
     width: 480px;
-    .menu{
+    .menu {
       list-style-type: none;
       display: flex;
       justify-content: space-between;
       height: 100%;
-      &__item__link{
+      &__item__link {
         display: inline-block;
         font-size: 16px;
         height: 100%;
@@ -50,7 +49,7 @@ header{
         font-weight: 400;
         box-sizing: border-box;
         letter-spacing: 0.8px;
-        &:hover{
+        &:hover {
           border-bottom: 2px solid #ffffff;
         }
       }
@@ -58,7 +57,7 @@ header{
   }
 }
 
-.intro{
+.intro {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -67,26 +66,26 @@ header{
   width: 100%;
   top: 0;
   z-index: -1;
-  &__text-block{
+  &__text-block {
     width: 50%;
     padding-top: 225px;
     position: relative;
-    &__text{
+    &__text {
       max-width: 415px;
       margin: 0 auto;
-      h1{
+      h1 {
         font-size: 60px;
         font-weight: 400;
         line-height: 60px;
         margin-bottom: 48px;
       }
-      p{
+      p {
         text-transform: uppercase;
         font-size: 20px;
         line-height: 20px;
         margin-bottom: 54px;
       }
-      button{
+      button {
         width: 245px;
         height: 52px;
         box-sizing: border-box;
@@ -98,18 +97,61 @@ header{
         display: block;
       }
     }
-    &__can{
+    &__can {
       position: absolute;
       right: -54%;
       top: 143px;
     }
   }
-  &__wallpaper{
-    background: url("../assets/img/index-background-desktop.jpg") no-repeat right;
+  &__wallpaper {
+    background: -webkit-image-set(url("../assets/img/index-background-desktop@1x.jpg") 1x, url("../assets/img/index-background-desktop@2x.jpg") 2x) no-repeat right;
     width: 50%;
   }
 }
 
+.course-description {
+  margin-top: 635px;
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    max-width: 570px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    padding: 48px 52px;
+    &__header{
+      display: flex;
+      align-items: center;
+      margin-bottom: 46px;
+      &__logo-wrapper{
+        width: 100px;
+        height: 100px;
+        background-color: #68b738;
+        border-radius: 50%;
+        position: relative;
+        img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      h2{
+        text-transform: uppercase;
+        margin-left: 64px;
+        font-size: 35px;
+        font-family: "Oswald", SansSerif;
+        font-weight: 400;
+      }
+    }
+    p{
+      font-size: 16px;
+      font-family: "Arial";
+      color: #686868;
+      line-height: 23px;
+    }
+  }
+}
 
 
 

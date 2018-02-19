@@ -9,39 +9,65 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="content">
-            <header>
-                <picture class="logo">
-                    <source srcset="assets/img/logo-desktop.png" media="(min-width: 1440px)">
-                    <img src="assets/img/logo-mobile.png" alt="logo">
-                </picture>
-                <nav>
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a href="#" class="menu__item__link">главная</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item__link">каталог продукции</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__item__link">подбор программы</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <div class="intro">
-            <div class="intro__text-block">
-                <div class="intro__text-block__text">
-                    <h1>Функциональное питание для котов</h1>
-                    <p>занялся собой? займись котом!</p>
-                    <button>подобрать программу</button>
-                </div>
-                <img class="intro__text-block__can" src="assets/img/index-can.png" alt="can_pic">
+<div class="wrapper">
+    <div class="intro">
+        <div class="intro__text-block">
+            <div class="intro__text-block__text">
+                <h1>Функциональное питание для котов</h1>
+                <p>занялся собой? займись котом!</p>
+                <button>подобрать программу</button>
             </div>
-            <div class="intro__wallpaper"></div>
+            <img class="intro__text-block__can" src="assets/img/index-can-desktop@1x.png"
+                 srcset="assets/img/index-can-desktop@2x.png" alt="can_pic" width="552px">
         </div>
+        <div class="intro__wallpaper"></div>
     </div>
+    <div class="content">
+        <header>
+            <img class="logo" src="assets/img/logo-desktop.svg">
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">каталог продукции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">подбор программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="course-description">
+            <div class="course-description__item">
+                <div class="course-description__item__header">
+                    <div class="course-description__item__header__logo-wrapper">
+                        <img src="assets/img/icon-cat-slim.svg" alt="slim_cat" width="70">
+                    </div>
+                    <h2>похудение</h2>
+                </div>
+                <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
+                    Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a href="#"></a>
+            </div>
+            <div class="course-description__item">
+                <div class="course-description__item__header">
+                    <div class="course-description__item__header__logo-wrapper">
+                        <img src="assets/img/icon-cat-pro.svg" alt="pro_cat" width="134">
+                    </div>
+                    <h2>набор массы</h2>
+                </div>
+                <p>Заработать авторитет среди дворовых котов и даже собак?
+                    Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a href="#"></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
 </body>
 </html>
