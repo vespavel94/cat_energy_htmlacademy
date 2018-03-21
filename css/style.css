@@ -120,6 +120,7 @@ header nav .menu__item__link:hover {
 .intro__wallpaper {
   background: -webkit-image-set(url("../assets/img/index-background-desktop@1x.jpg") 1x, url("../assets/img/index-background-desktop@2x.jpg") 2x) no-repeat right;
   width: 50%;
+  background-position-x: 40px;
 }
 
 .course-description {
@@ -133,7 +134,7 @@ header nav .menu__item__link:hover {
   max-width: 570px;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding: 48px 52px;
+  padding: 48px 52px 52px;
 }
 
 .course-description__item__header {
@@ -153,7 +154,7 @@ header nav .menu__item__link:hover {
 .course-description__item__header__logo-wrapper img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
 }
 
@@ -170,4 +171,60 @@ header nav .menu__item__link:hover {
   font-family: "Arial";
   color: #686868;
   line-height: 23px;
+}
+
+.course-description__item:nth-child(1) img {
+  left: 48%;
+  top: 42%;
+}
+
+.course-description__item a {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #171717;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.course-description__item a img {
+  margin-left: 20px;
+  padding-bottom: 3px;
+}
+
+.course-steps {
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
+.course-steps h1 {
+  font-size: 60px;
+  line-height: 60px;
+  color: #171717;
+  font-weight: 400;
+}
+
+.course-steps__wrapper {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-steps__wrapper__item {
+  width: 245px;
+  max-height: 230px;
+}
+
+.course-steps__wrapper__item__icon {
+  background-color: #68b738;
+  width: 80px;
+  height: 80px;
+}
+
+.course-steps__wrapper__item p {
+  margin-top: 40px;
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 25px;
+  color: #686868;
 }
