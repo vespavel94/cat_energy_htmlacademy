@@ -254,5 +254,66 @@ header {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    >div{
+      max-width: 50%;
+    }
+    &__info{
+      p:first-child{
+        margin-top: 76px;
+        max-width: 433px;
+        font-size: 16px;
+        font-family: "Arial";
+        color: #686868;
+        line-height: 24px;
+      }
+      &__flex-wrapper{
+        margin-top: 75px;
+      }
+      &__result{
+        display: flex;
+        max-width: 366px;
+        justify-content: space-between;
+        &__item{
+          width: 162px;
+          height: 72px;
+          text-align: center;
+          border: 1px solid #cdcdcd;
+          border-radius: 3px;
+          position: relative;
+          span{
+            font-size: 30px;
+            color: #171717;
+            font-weight: 400;
+            line-height: 65px;
+          }
+          &__caption{
+            position: absolute;
+            display: inline-block;
+            line-height: 15px;
+            color: #686868;
+            font-size: 14px;
+            padding: 0 7px;
+            white-space: nowrap;
+            font-family: "Arial";
+            bottom: -7px;
+            left: 16%;
+            background-color: #f2f2f2;
+          }
+          .the-only-way{
+            left: 9%;
+          }
+        }
+      }
+      &__money{
+        margin-top: 55px;
+        color: #171717;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
   }
 }
+
+
