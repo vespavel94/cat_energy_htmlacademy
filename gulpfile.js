@@ -22,9 +22,9 @@ gulp.task('server', function(){
 gulp.task('build', function(){
 	return gulp.src(['css/*.css'])
 	.pipe(minify())
-  .pipe(rename({
-    suffix: ".min"
-  }))
+  	.pipe(rename({
+		suffix: ".min"
+  	}))
 	.pipe(gulp.dest('css/'));
 });
 

@@ -282,15 +282,14 @@ header {
           border: 1px solid #cdcdcd;
           border-radius: 3px;
           position: relative;
-          span{
+          span:first-child{
             font-size: 30px;
             color: #171717;
             font-weight: 400;
             line-height: 65px;
           }
-          &__caption{
+          &__legend{
             position: absolute;
-            display: inline-block;
             line-height: 15px;
             color: #686868;
             font-size: 14px;
@@ -298,11 +297,9 @@ header {
             white-space: nowrap;
             font-family: "Arial";
             bottom: -7px;
-            left: 16%;
+            left: 50%;
             background-color: #f2f2f2;
-          }
-          .the-only-way{
-            left: 9%;
+            transform: translate(-50%, 0);
           }
         }
       }
@@ -316,4 +313,80 @@ header {
   }
 }
 
+footer{
+  background-color: #f2f2f2;
+  .footer__map{
+    position: relative;
+    &__map-body{
+      width: 100%;
+    }
+    &__address{
+      width: 570px;
+      height: 200px;
+      position: absolute;
+      padding: 0 90px 0 70px;
+      box-sizing: border-box;
+      top: 95px;
+      left: 110px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__welcome{
+        font-size: 20px;
+        color: #171717;
+        text-transform: uppercase;
+        line-height: 24px;
+      }
+      &__addr{
+        font-family: "Arial", sans-serif;
+        color: #686868;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70px;
+      }
+    }
+    &__map-pin{
+      position: absolute;
+      bottom: 148px;
+      right: 338px;
+    }
+  }
+  .footer__meta-info{
+    height: 149px;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &__social-links{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 125px;
+    }
+    &__htmlacademy-logo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 165px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Arial";
+        color: #686868;
+        svg{
+          width: 38px;
+          path{
+            fill: #444444;
+          }
+        }
+      }
+    }
+  }
+}
 
