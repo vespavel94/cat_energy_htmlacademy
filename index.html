@@ -10,6 +10,22 @@
     </head>
     <body>
         <div class="wrapper">
+            <header>
+                <img class="logo" src="assets/img/logo-desktop.svg">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__item__link">главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="catalog.html" class="menu__item__link">каталог продукции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item__link">подбор программы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
             <div class="intro">
                 <div class="intro__text-block">
                     <div class="intro__text-block__text">
@@ -23,22 +39,6 @@
                 <div class="intro__wallpaper"></div>
             </div>
             <div class="content">
-                <header>
-                    <img class="logo" src="assets/img/logo-desktop.svg">
-                    <nav>
-                        <ul class="menu">
-                            <li class="menu__item">
-                                <a href="#" class="menu__item__link">главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item__link">каталог продукции</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__item__link">подбор программы</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
                 <div class="course-description">
                     <div class="course-description__item">
                         <div class="course-description__item__header">
@@ -130,9 +130,9 @@
                         </div>
                     </div>
                     <picture class="footer__map__map-body">
-                        <source src="assets/img/bg-map-desktop@1x.png 1x" srcset="assets/img/bg-map-desktop@2x.png 2x" media="(min-width: 1400px)">
-                        <source src="assets/img/bg-map-tablet@1x.png 1x" srcset="assets/img/bg-map-tablet@2x.png 2x" media="(min-width: 800px)">
-                        <img src="assets/img/bg-map-mobile@1x.png 1x" srcset="assets/img/bg-map-mobile@2x.png 2x" alt="map">
+                        <source srcset="assets/img/bg-map-desktop@2x.png 2x, assets/img/bg-map-desktop@1x.png 1x" media="(min-width: 1400px)">
+                        <source srcset="assets/img/bg-map-tablet@2x.png 2x, assets/img/bg-map-tablet@1x.png 1x" media="(min-width: 800px)">
+                        <img srcset="assets/img/bg-map-mobile@2x.png 2x, assets/img/bg-map-mobile@1x.png 1x" alt="map">
                     </picture>
                     <img class="footer__map__map-pin" src="assets/img/map-pin.png" alt="pin">
                 </div>

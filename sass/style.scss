@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700&subset=cyrillic');
+@mixin green-button($font-size, $width, $height) {
+  font-size: $font-size;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background-color: #68b738;
+  text-transform: uppercase;
+  width: $width;
+  outline: none;
+  height: $height;
+  border: none;
+}
 
 * {
   margin: 0;
@@ -23,6 +35,8 @@
 }
 
 header {
+  max-width: 1220px;
+  margin: 0 auto;
   height: 59px;
   display: flex;
   flex-wrap: nowrap;
@@ -390,3 +404,167 @@ footer{
   }
 }
 
+// ---------------------STYLES FOR CATALOG--------------------------------
+
+.type-2-header{
+  nav ul li a{
+    color: #000000;
+    &:hover{
+      border-bottom: 2px solid #68b738;
+    }
+  }
+}
+
+.catalog{
+  margin-top: 70px;
+  &__header{
+    color: #171717;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+  &__goods{
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item{
+      padding: 165px 40px 40px 40px;
+      margin-top: 140px;
+      width: 245px;
+      background-color: #f2f2f2;
+      box-sizing: border-box;
+      position: relative;
+      &__picture{
+        display: block;
+        position: absolute;
+        bottom: 320px;
+        left: 50%;
+        transform: translate(-50%,0);
+        img{
+          display: block;
+        }
+      }
+      &__description{
+        &__title{
+          color: #171717;
+          font-size: 20px;
+          line-height: 22px;
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+        &__info{
+          font-size: 16px;
+          font-family: "Arial";
+          color: #686868;
+          width: 100%;
+          margin: 0 auto;
+          border-collapse: collapse;
+          margin-bottom: 30px;
+          tr{
+            border-bottom: 2px solid #cdcdcd;
+            height: 32px;
+          }
+          td:nth-child(2){
+            text-align: right;
+          }
+        }
+      }
+      &__purchase-button{
+        @include green-button(16px, 100%, 40px);
+      }
+    }
+    .showmore-plate{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border: 2px solid #f2f2f2;
+      .catalog__goods__item__description__info{
+        text-align: center;
+      }
+      .catalog__goods__item__purchase-button{
+        background-color: #f2f2f2;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.options-builder{
+  margin: 95px 0 85px 0;
+  border-top: 3px solid #68b738;
+  position: relative;
+  &__header{
+    position: absolute;
+    left: 70px;
+    font-size: 36px;
+    color: #171717;
+    background-color: #ffffff;
+    line-height: 36px;
+    font-family: "Oswald", "Arial", sans-serif;
+    top: -24px;
+    font-weight: 400;
+    padding: 0 40px;
+  }
+  &__optional-goods-wrapper{
+    max-width: 1220px;
+    padding: 0 40px;
+    margin: 90px auto 0;
+    display: flex;
+    justify-content: space-between;
+    &__list{
+      width: 73.5%;
+      &__item{
+        box-sizing: border-box;
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #cdcdcd;
+        &__title{
+          font-size: 20px;
+          color: #343434;
+          text-transform: uppercase;
+          width: 15%;
+        }
+        &__info{
+          width: 285px;
+          display: flex;
+          justify-content: space-between;
+          span{
+            font-size: 16px;
+            font-family: "Arial";
+            color: #686868;
+          }
+        }
+        &__purchase-button{
+          @include green-button(16px, 245px, 40px)
+        }
+        &:last-child{
+          border-bottom: 1px solid #cdcdcd;
+        }
+      }
+    }
+    &__gift{
+      width: 245px;
+      height: 290px;
+      position: relative;
+      box-sizing: border-box;
+      background-image: -webkit-image-set(url(../assets/img/gift-photo-desktop@1x.jpg) 1x, url(../assets/img/gift-photo-desktop@2x.jpg) 2x);
+      background-size: cover;
+      img{
+        display: block;
+        margin: 65px auto;
+      }
+      p{
+        font-size: 16px;
+        font-family: "Arial";
+        color: #ffffff;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+  }
+}
