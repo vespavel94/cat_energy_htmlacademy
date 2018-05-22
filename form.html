@@ -7,11 +7,19 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>CAT ENERGY</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="bower_components/jquery/dist/jquery.js"></script>
     </head>
     <body>
         <div class="wrapper">
             <header class="type-2-header">
-                <img class="logo" src="assets/img/logo-desktop.svg">
+                <div class="logo">
+                    <picture>
+                        <source srcset="assets/img/logo-desktop.svg" media="(min-width: 769px)">
+                        <img src="assets/img/icon-logo-mobile.svg">
+                    </picture>
+                    <img src="assets/img/logo-mobile-header.svg" class="logo__title" width="100">
+                    <button class="logo__menu-button"></button>
+                </div>
                 <nav>
                     <ul class="menu">
                         <li class="menu__item">
@@ -145,11 +153,7 @@
                             <p>Санкт-Петербург</p>
                         </div>
                     </div>
-                    <picture class="footer__map__map-body">
-                        <source srcset="assets/img/bg-map-desktop@2x.png 2x, assets/img/bg-map-desktop@1x.png 1x" media="(min-width: 1400px)">
-                        <source srcset="assets/img/bg-map-tablet@2x.png 2x, assets/img/bg-map-tablet@1x.png 1x" media="(min-width: 800px)">
-                        <img srcset="assets/img/bg-map-mobile@2x.png 2x, assets/img/bg-map-mobile@1x.png 1x" alt="map">
-                    </picture>
+                    <div class="footer__map__map-body"></div>
                     <img class="footer__map__map-pin" src="assets/img/map-pin.png" alt="pin">
                 </div>
                 <div class="footer__meta-info">
@@ -174,5 +178,10 @@
                 </div>
             </footer>
         </div>
+        <script>
+            $('.logo__menu-button').on("click", function(){
+                $('nav').toggleClass("menu-visible");
+            })
+        </script>
     </body>
 </html>
