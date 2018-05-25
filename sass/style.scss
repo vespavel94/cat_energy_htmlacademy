@@ -343,7 +343,7 @@ header {
       position: relative;
       &__icon {
         background-color: #68b738;
-        min-width: 80px;
+        width: 80px;
         height: 80px;
       }
       p {
@@ -524,6 +524,7 @@ footer{
   .footer__meta-info{
     height: 149px;
     max-width: 1220px;
+    padding: 0 30px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -720,6 +721,7 @@ footer{
           display: none;
         }
         &__icon{
+          min-width: 80px;
           @media(max-width: 450px){
             min-width: 60px;
             height: 60px;
@@ -736,6 +738,10 @@ footer{
     &__logo-wrapper{
       transform: translate(0,-50%) scale(1.25);
     }
+  }
+  .demonstration__description__info__flex-wrapper{
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -756,11 +762,36 @@ footer{
       margin-top: 15px;
     }
   }
+  footer .footer__meta-info{
+    flex-direction: column;
+    height: 236px;
+    padding: 38px 20px 22px;
+    align-items: center;
+    box-sizing: border-box;
+    &__social-links{
+      width: 100%;
+      border-bottom: 1px solid #d9d9d9;
+      border-top: 1px solid #d9d9d9;
+      box-sizing: border-box;
+      padding: 18px 70px 14px;
+      margin-top: 25px;
+    }
+    &__htmlacademy-logo{
+      width: 100%; 
+      margin-top: 10px;
+      a{
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media(max-width:494px){
   .course-description__item:nth-child(2) h2{
     line-height: 50px;
+  }
+  footer .footer__map__address{
+    padding: 0 20px;
   }
 }
 
@@ -838,6 +869,90 @@ footer{
         img{
           padding-bottom: 1px;
           margin-left: 10px;
+        }
+      }
+    }
+  }
+  .course-steps{
+    margin-top: 0;
+    h1{
+      font-size: 38px;
+      line-height: 38px;
+    }
+    &__wrapper{
+      margin-top: 40px;
+      p{
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .demonstration {
+    background-color: #f2f2f2;
+    margin-top: 0;
+    padding-top: 34px;
+    &__header{
+      background-color: #f2f2f2;
+      padding: 0;
+      h2{
+        font-size: 38px;
+        line-height: 38px;
+        padding: 0 20px;
+      }
+    }
+    &__description{
+      &__info{
+        padding: 0 20px;
+        margin-top: 40px;
+        p:first-child{
+          font-size: 14px;
+          line-height: 20px;
+        }
+        &__flex-wrapper{
+          flex-direction: column;
+          padding: 0 20px;
+          margin-top: 30px;
+        }
+        &__result{
+          width: 280px;
+          justify-content: space-between;
+          &__item{
+            width: 120px;
+            height: 56px;
+            span:first-child{
+              font-size: 24px;
+              line-height: 55px;
+            }
+            &__legend{
+              font-size: 12px;
+              background-color: #f2f2f2;
+            }
+          }
+        }
+        &__money{
+          margin-top: 30px;
+          font-size: 18px;
+        }
+      }
+      &__beforeAfter{
+        height: 330px;
+        margin: 0;
+      }
+    }
+  }
+  footer{
+    .footer__map{
+      &__address{
+        height: 114px;
+        &__welcome{
+          font-size: 16px;
+          line-height: 22px;
+        }
+        &__addr{
+          height: 68px;
+          p{
+            font-size: 14px;
+          }
         }
       }
     }

@@ -407,7 +407,7 @@ header nav .menu__item__link:hover {
 
 .course-steps__wrapper__item__icon {
   background-color: #68b738;
-  min-width: 80px;
+  width: 80px;
   height: 80px;
 }
 
@@ -659,6 +659,7 @@ footer .footer__map__map-pin {
 footer .footer__meta-info {
   height: 149px;
   max-width: 1220px;
+  padding: 0 30px;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -911,6 +912,9 @@ footer .footer__meta-info__htmlacademy-logo a svg path {
   .course-steps__wrapper__item span {
     display: none;
   }
+  .course-steps__wrapper__item__icon {
+    min-width: 80px;
+  }
 }
 
 @media (max-width: 768px) and (max-width: 450px) {
@@ -927,6 +931,17 @@ footer .footer__meta-info__htmlacademy-logo a svg path {
     -webkit-transform: translate(0, -50%) scale(1.25);
         -ms-transform: translate(0, -50%) scale(1.25);
             transform: translate(0, -50%) scale(1.25);
+  }
+  .demonstration__description__info__flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -947,11 +962,45 @@ footer .footer__meta-info__htmlacademy-logo a svg path {
     max-width: 100%;
     margin-top: 15px;
   }
+  footer .footer__meta-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 236px;
+    padding: 38px 20px 22px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .footer__meta-info__social-links {
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 18px 70px 14px;
+    margin-top: 25px;
+  }
+  footer .footer__meta-info__htmlacademy-logo {
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .footer__meta-info__htmlacademy-logo a {
+    width: 100%;
+  }
 }
 
 @media (max-width: 494px) {
   .course-description__item:nth-child(2) h2 {
     line-height: 50px;
+  }
+  footer .footer__map__address {
+    padding: 0 20px;
   }
 }
 
@@ -1035,6 +1084,91 @@ footer .footer__meta-info__htmlacademy-logo a svg path {
   .course-description__item a img {
     padding-bottom: 1px;
     margin-left: 10px;
+  }
+  .course-steps {
+    margin-top: 0;
+  }
+  .course-steps h1 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .course-steps__wrapper {
+    margin-top: 40px;
+  }
+  .course-steps__wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .demonstration {
+    background-color: #f2f2f2;
+    margin-top: 0;
+    padding-top: 34px;
+  }
+  .demonstration__header {
+    background-color: #f2f2f2;
+    padding: 0;
+  }
+  .demonstration__header h2 {
+    font-size: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+  }
+  .demonstration__description__info {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+  .demonstration__description__info p:first-child {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .demonstration__description__info__flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+  .demonstration__description__info__result {
+    width: 280px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .demonstration__description__info__result__item {
+    width: 120px;
+    height: 56px;
+  }
+  .demonstration__description__info__result__item span:first-child {
+    font-size: 24px;
+    line-height: 55px;
+  }
+  .demonstration__description__info__result__item__legend {
+    font-size: 12px;
+    background-color: #f2f2f2;
+  }
+  .demonstration__description__info__money {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .demonstration__description__beforeAfter {
+    height: 330px;
+    margin: 0;
+  }
+  footer .footer__map__address {
+    height: 114px;
+  }
+  footer .footer__map__address__welcome {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  footer .footer__map__address__addr {
+    height: 68px;
+  }
+  footer .footer__map__address__addr p {
+    font-size: 14px;
   }
 }
 
