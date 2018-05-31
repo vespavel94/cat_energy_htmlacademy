@@ -1880,6 +1880,10 @@ footer .footer__meta-info__htmlacademy-logo a svg path {
   padding: 0 40px;
 }
 
+.program-picking__contacts__header br {
+  display: none;
+}
+
 .program-picking__contacts__wrapper {
   max-width: 1220px;
   padding: 0 40px;
@@ -2135,4 +2139,238 @@ footer .footer__meta-info__htmlacademy-logo a svg path {
   font-size: 16px;
   font-family: "Arial", sans-serif;
   color: #686868;
+}
+
+@media (max-width: 768px) {
+  .program-picking-header {
+    margin-top: 0;
+    padding: 65px 30px 0;
+  }
+  .program-picking-header h2 {
+    margin-top: 50px;
+  }
+  .program-picking-header p {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  .program-picking__pet-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 30px;
+    max-width: 630px;
+  }
+  .program-picking__pet-info__pet-data {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .program-picking__pet-info__program-type {
+    width: 100%;
+    height: 210px;
+  }
+  .program-picking__contacts__header {
+    left: 20px;
+  }
+  .program-picking__contacts__wrapper {
+    padding: 0 30px;
+    max-width: 630px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .program-picking__contacts__wrapper__field {
+    width: 100%;
+    padding: 0;
+  }
+  .program-picking__contacts__wrapper__field:first-child {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .program-picking__comment__header {
+    left: 20px;
+  }
+  .program-picking__comment__wrapper {
+    max-width: 630px;
+    padding: 0 30px;
+  }
+  .program-picking__additional-info__header {
+    left: 20px;
+  }
+  .program-picking__additional-info__wrapper {
+    max-width: 630px;
+    padding: 0 30px;
+  }
+  .program-picking__additional-info__wrapper__options-block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .program-picking__additional-info__wrapper__options-block__item {
+    width: 50%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .program-picking__additional-info__wrapper__options-block__item:nth-child(2n) {
+    padding-left: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .program-picking__additional-info__wrapper__submit-block span {
+    margin-left: 60px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .program-picking-header {
+    padding: 65px 20px 0;
+  }
+  .program-picking-header h2 {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 30px 0;
+  }
+  .program-picking-header p {
+    font-size: 16px;
+  }
+  .program-picking__pet-info {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .program-picking__pet-info__pet-data {
+    padding: 0 20px;
+    margin-bottom: 24px;
+  }
+  .program-picking__pet-info__pet-data__field span {
+    font-size: 16px;
+  }
+  .program-picking__pet-info__pet-data__field__input input {
+    height: 44px;
+    font-size: 16px;
+  }
+  .program-picking__pet-info__program-type {
+    border: none;
+    padding: 20px 20px 24px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    height: 160px;
+  }
+  .program-picking__pet-info__program-type__item__checkbox:checked + .program-picking__pet-info__program-type__item__checkbox-body:after {
+    width: 12px;
+    height: 12px;
+  }
+  .program-picking__pet-info__program-type__item__checkbox-body {
+    width: 30px;
+    height: 30px;
+  }
+  .program-picking__pet-info__program-type__item span {
+    font-size: 16px;
+  }
+  .program-picking__contacts {
+    margin-top: 42px;
+  }
+  .program-picking__contacts__header {
+    font-size: 26px;
+    left: 0;
+    padding: 0 20px;
+  }
+  .program-picking__contacts__header br {
+    display: block;
+  }
+  .program-picking__contacts__wrapper {
+    padding: 0 20px;
+    margin-top: 75px;
+  }
+  .program-picking__contacts__wrapper__field__label span {
+    font-size: 16px;
+  }
+  .program-picking__contacts__wrapper__field__label__input input {
+    height: 44px;
+    font-size: 16px;
+  }
+  .program-picking__contacts__wrapper__field__label__input:after {
+    height: 44px;
+    width: 50px;
+  }
+  .program-picking__comment {
+    margin-top: 50px;
+  }
+  .program-picking__comment__header {
+    font-size: 26px;
+    left: 0;
+    padding: 0 20px;
+  }
+  .program-picking__comment__wrapper {
+    margin-top: 42px;
+    padding: 0 20px;
+  }
+  .program-picking__comment__wrapper textarea {
+    font-size: 16px;
+  }
+  .program-picking__additional-info {
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+  .program-picking__additional-info__header {
+    left: 0;
+    padding: 0 20px;
+    font-size: 26px;
+  }
+  .program-picking__additional-info__wrapper {
+    margin: 42px auto 0;
+    padding: 0 20px;
+  }
+  .program-picking__additional-info__wrapper__options-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+  }
+  .program-picking__additional-info__wrapper__options-block__item {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .program-picking__additional-info__wrapper__options-block__item:nth-child(2n) {
+    padding: 0;
+  }
+  .program-picking__additional-info__wrapper__options-block__item__checkbox-body {
+    width: 30px;
+    height: 30px;
+  }
+  .program-picking__additional-info__wrapper__options-block__item span {
+    font-size: 16px;
+  }
+  .program-picking__additional-info__wrapper__submit-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 35px;
+  }
+  .program-picking__additional-info__wrapper__submit-block__submit-button {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .program-picking__additional-info__wrapper__submit-block span {
+    margin: 0;
+  }
 }
