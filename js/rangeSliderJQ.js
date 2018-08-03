@@ -1,14 +1,21 @@
-var sliderGap = $(".sliderGap");
-sliderGap.on("mousedown touchstart",{min: 0, max: 100}, initSlider);
+(function($){
+  $.fn.initSlider = function(data){
+    $(this).html('<div class="sliderGap"></div>'+
+      '<p class="sliderValue">0</p>'); 
+    var sliderGap = $(this).children(".sliderGap");
+    sliderGap.on("mousedown touchstart", data, Slider);
+  }
+})(jQuery);
 
-function initSlider(e){
+function Slider(e){
   var startX = $(this).parent().offset().left,
 		sliderWidth = parseInt($(this).parent().css("width")),
 		gapWidth = parseInt($(this).css("width")),
 		curr = $(this),
 		rangeValue = 0,
-		min = e.data.min,
-  	max = e.data.max;
+		min = e.data.range.min,
+    max = e.data.range.max,
+    flag = e.data.flag;
   
   $(document).on("mousemove touchmove", function(d){
     if (d.type=="touchmove"){
@@ -24,15 +31,21 @@ function initSlider(e){
   	 shift = 0;
     }  
     curr.css("left", shift + "px");
-    rangeValue = insertValue(min, max, sliderWidth-gapWidth, shift);
-    curr.siblings(".value").html(rangeValue);
+    rangeValue = countValue(min, max, sliderWidth-gapWidth, shift);
+    
+    if(flag == "beforeAfter"){    //for_BeforeAfter.js plugin
+      curr.parents(".BA_wrapper").siblings(".BA_after").css("width", rangeValue + "%");
+      curr.parents(".BA_wrapper").siblings(".BA_before").css("width", 100 - rangeValue + "%");
+    }
+
+    curr.siblings(".sliderValue").html(rangeValue);
   });
   $(document).on("mouseup touchend", function(){
     $(document).unbind("mousemove touchmove");
     $(document).unbind("mouseup touchend");
   });
 
-  function insertValue(min, max, valueLength, shift){
+  function countValue(min, max, valueLength, shift){    //returns current value of slider
     var basis = (valueLength/(max-min)),
       range = (min+(shift/basis)).toFixed();
     return range;
